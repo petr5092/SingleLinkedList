@@ -4,13 +4,10 @@ class Node:
         self.next_node = None
 
 
-
-
 class SingleLinkedList:
     def __init__(self):
         self.head = None
         self.tail = None
-
 
     def push(self, num):
         node_part = Node(num)
@@ -65,15 +62,14 @@ class SingleLinkedList:
         else:
             print(x.value)
             x.next_node = None
-            
+
     def exit(self):
         x = self.head
-        answer = ''
+        answer = ""
         while x:
-            answer += str(x.value) + ' -> ' 
+            answer += str(x.value) + " -> "
             x = x.next_node
         return answer[:-4]
-
 
 
 lst = SingleLinkedList()
